@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app { 
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .time-select,
+  .sound-picker {  /* tema seçme kısmında yapılan düzenlemeler */
+    height: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  .sound-picker {  /* tema seçme kısmında yapılan düzenlemeler */
+    height: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  .time-select button,
+  .sound-picker button {
+    color: rgb(238, 25, 167);
+    width: 35%;
+    height: 10%;
+    background: rgb(239, 240, 161);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px 50px;
+    cursor: pointer;
+    border: 2px solid rgb(243, 186, 120);
+    transition: all 0.5s ease;
+  }
+  .sound-picker button {
+    border: whitesmoke;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+  }
+  .sound-picker button:nth-child(1) {  /* seçilecek olan temalar için yapılan düzenlemeler(yağmur,dalga,maeditasyon ve doğa sesleri için olan kısım) */
+    background: #ebb8e5;
+  }
+  .sound-picker button:nth-child(2) {
+    background: #c37fdd;
+  }
+  .sound-picker button:nth-child(3) {
+    background: #94eec8;
+  }
+  .sound-picker button:nth-child(4) {
+    background: #fcad6c;
+  }
+
+  .sound-picker button img { 
+    height: 100%;
+  }
+  
+  .time-select button:hover {  /* dakika seçme alanı için yapılan düzenlemeler */
+    background: rgb(240, 211, 211);
+    color: rgb(240, 119, 83);
+  }
+  .play {
+    margin: 28% 0 0 5%;
+  }
+  .replay {
+    transform: translateY(-50px);
+  }
+  
+  
+  .player-container {/* zaman göstergesi için yapılan düzenlemeler */
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .player-container svg {  /* görünümü için yapılan düzenlemeler */
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+  }
+  .player-container svg circle { 
+    transition: all 0.2s ease-in-out;
+  }
+  .time-display {  /* zaman göstergesi ayarları(rengi,pozisyonu,boyutu vs) */
+    color: rgb(243, 191, 20);
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    bottom: 10%;
+  }
+  video {  /* arkaplanda yürütülecek olan video için yapılan düzenlemeler (genişlik,pozisyon gibi) */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+  }
+  
+  .namesurnameColor{
+	  color:White;
+	  font-size:20px;
+	  margin-right:20px;
+	  margin-top:20px;
+  }
+  
+  .Cikisbutonu{
+	  cursor: pointer;
+	  color:white;
+	  margin-right:20px;
+  }
+  
